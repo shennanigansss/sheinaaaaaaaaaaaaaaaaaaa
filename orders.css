@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', cursive;
+    background: linear-gradient(to bottom, #d6aefc, #aa82b8);
+  }
+  
+  .container {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 24px;
+    color: rgb(8, 0, 0);
+    text-decoration: none;
+  }
+  
+  .cart-list {
+    margin-top: 50px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    background: #eaeaea;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .selector {
+    margin-right: 10px;
+  }
+  
+  .combo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+  }
+  
+  .combo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .addon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .price {
+    margin-right: 10px;
+    color: #a5841e;
+    font-weight: bold;
+  }
+  
+  .add-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #900;
+    cursor: pointer;
+  }
+  
+  .cart-button {
+    margin-top: 40px;
+    padding: 14px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: #2e3cd4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

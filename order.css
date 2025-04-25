@@ -1,0 +1,163 @@
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fefefe;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .back-button {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .top-bar h1 {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+  }
+  
+  .profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Burger Category Section */
+  .burger-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .burger-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .burger-category img {
+    width: 80px;
+    background-color: #a572ff;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .burger-category p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .burger-slider {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+  
+  .burger-slider img {
+    width: 65px;
+    border-radius: 12px;
+  }
+  
+  /* Promotions Section */
+  .promotions h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .promo-card {
+    background-color: #a572ff;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .promo-text p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .promo-text p:first-child {
+    font-weight: bold;
+  }
+  
+  .promo-card img {
+    width: 130px;
+    transform: translateY(-10px);
+  }
+  
+  /* Popular Section */
+  .popular h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0 10px;
+  }
+  
+  .popular-item {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .popular-item img {
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .popular-item p {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .price {
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  /* Home Icon at Bottom */
+  .home-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .home-icon img {
+    width: 30px;
+  }
+  

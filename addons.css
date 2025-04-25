@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #8e5ec6, #3a0a57);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    z-index: 10;
+  }
+  
+  .burger-img {
+    width: 100%;
+    display: block;
+  }
+  
+  .details {
+    padding: 20px;
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rating {
+    background: #6c5ce7;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .star {
+    color: yellow;
+  }
+  
+  .price {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .addons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .addons a img {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+  }
+  
+  .addons a img:hover {
+    transform: scale(1.1);
+  }
+  
+  .order-button {
+    display: block;
+    text-align: center;
+    background: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  

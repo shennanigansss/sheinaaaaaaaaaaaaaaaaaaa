@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="addons.html" class="back-button">←</a>
+
+    <div class="cart-list">
+      <!-- Combo Items -->
+      <div class="cart-item" data-name="Burger" data-price="20">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+        </div>
+        <span class="price">$20</span>
+        <div class="quantity-controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="cart-item" data-name="Burger + Cheese" data-price="20">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="cheese.png" alt="Cheese" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <div class="quantity-controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="cart-item" data-name="Burger + Ketchup" data-price="20">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="ketchup.png" alt="Ketchup" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <div class="quantity-controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="cart-item" data-name="Burger + Egg" data-price="20">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="egg.png" alt="Egg" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <div class="quantity-controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <!-- 🍟 Burger + Fries -->
+      <div class="cart-item" data-name="Burger + Fries" data-price="20">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="fries.png" alt="Fries" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <div class="quantity-controls">
+          <button class="minus">-</button>
+          <span class="quantity">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🧾 Order Summary -->
+    <div class="order-summary">
+      <h3>Your Order</h3>
+      <ul id="order-list"></ul>
+      <p class="total">Total: $<span id="total">0</span></p>
+    </div>
+
+    <button class="cart-button" onclick="checkout()">Place Order</button>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>

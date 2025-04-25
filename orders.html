@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+  <div class="container">
+    <a href="addons.html" class="back-button">←</a>
+
+    <div class="cart-list">
+      <div class="cart-item">
+        <input type="checkbox" class="selector">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+        </div>
+        <span class="price">$20</span>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="cart-item">
+        <input type="checkbox" class="selector">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="cheese.png" alt="Cheese" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="cart-item">
+        <input type="checkbox" class="selector">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="ketchup.png" alt="Ketchup" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="cart-item">
+        <input type="checkbox" class="selector">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="egg.png" alt="Egg" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <button class="add-btn">+</button>
+      </div>
+
+      <!-- ✅ New Item: Burger + Fries -->
+      <div class="cart-item">
+        <input type="checkbox" class="selector">
+        <div class="combo">
+          <img src="burger.png" alt="Burger">
+          <img src="fries.png" alt="Fries" class="addon">
+        </div>
+        <span class="price">$20</span>
+        <button class="add-btn">+</button>
+      </div>
+    </div>
+
+    <button class="cart-button" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <script>
+    function addToCart() {
+      const selected = document.querySelectorAll('.selector:checked');
+      if (selected.length === 0) {
+        alert("Please select an item to add.");
+      } else {
+        alert(`${selected.length} item(s) added to cart!`);
+      }
+    }
+  </script>
+</body>
+</html>

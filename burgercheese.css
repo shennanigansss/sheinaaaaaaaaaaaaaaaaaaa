@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #cfb3e6, #2b142c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  height: 956px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ffffff, #d3aef0, #1a0b14);
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.circle {
+  margin-top: 180px;
+  background: #f2f2f2;
+  width: 80%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addon-img {
+  max-width: 70%;
+  height: auto;
+}
+
+.plus-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 160px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(120, 56, 240);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

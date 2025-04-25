@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Orders</title>
+  <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+  <div class="container">
+    <button class="back-btn" onclick="history.back()">←</button>
+
+    <div class="order-list">
+
+      <!-- Order Item 1 -->
+      <div class="order-item">
+        <div class="item-box">
+          <img src="burger.png" alt="Burger">
+        </div>
+        <div class="info">
+          <span class="price">$20</span>
+          <div class="quantity-control">
+            <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+            <span class="qty">0</span>
+            <button class="qty-btn" onclick="changeQty(this, 1)">＋</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Item 2 -->
+      <div class="order-item">
+        <div class="item-box">
+          <img src="burger.png" alt="Burger">
+          <img src="cheese.png" alt="Cheese">
+        </div>
+        <div class="info">
+          <span class="price">$20</span>
+          <div class="quantity-control">
+            <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+            <span class="qty">0</span>
+            <button class="qty-btn" onclick="changeQty(this, 1)">＋</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Item 3 -->
+      <div class="order-item">
+        <div class="item-box">
+          <img src="burger.png" alt="Burger">
+          <img src="ketchup.png" alt="Ketchup">
+        </div>
+        <div class="info">
+          <span class="price">$20</span>
+          <div class="quantity-control">
+            <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+            <span class="qty">0</span>
+            <button class="qty-btn" onclick="changeQty(this, 1)">＋</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Item 4 -->
+      <div class="order-item">
+        <div class="item-box">
+          <img src="burger.png" alt="Burger">
+          <img src="egg.png" alt="Egg">
+        </div>
+        <div class="info">
+          <span class="price">$20</span>
+          <div class="quantity-control">
+            <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+            <span class="qty">0</span>
+            <button class="qty-btn" onclick="changeQty(this, 1)">＋</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="order-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+  </div>
+
+  <script>
+    function changeQty(button, delta) {
+      const qtySpan = button.parentElement.querySelector('.qty');
+      let current = parseInt(qtySpan.textContent);
+      current = Math.max(0, current + delta);
+      qtySpan.textContent = current;
+    }
+
+    function placeOrder() {
+      alert("Order placed!");
+    }
+  </script>
+</body>
+</html>
